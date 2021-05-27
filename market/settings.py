@@ -26,7 +26,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '_cb#3)tsk@g!zv*1&-xxh%vdc4prb@&x7cc$_49$7f2bz%!+sn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ['DEBUG']
+production_server = False
+if production_server==True:
+    DEBUG = os.environ['DEBUG']
+else:
+    DEBUG = True
+
+
+
 
 ALLOWED_HOSTS = []
 
@@ -84,8 +91,8 @@ INSTALLED_APPS = [
     'django_tables2',
 
     'rest_framework',
-    'oscarapi'
-    'corsheaders'
+    'oscarapi',
+    'corsheaders',
 
 
 ]
@@ -104,7 +111,8 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     
 ]
-CORS_ALLOWED_ORIGINS = ["*"]
+# DOMAIN_NAME = os.environ["DOMAIN_NAME"]
+CORS_ALLOWED_ORIGINS = []
 CORS_ALLOW_METHODS = [
     'DELETE',
     'GET',
