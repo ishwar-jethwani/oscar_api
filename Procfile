@@ -1,1 +1,1 @@
-web: gunicorn --timeout 600 market.wsgi
+web: gunicorn market.wsgi
