@@ -85,6 +85,7 @@ INSTALLED_APPS = [
 
     # 3rd-party apps that oscar depends on
     'widget_tweaks',
+    'drf_yasg',
     'haystack',
     'treebeard',
     'sorl.thumbnail',   # Default thumbnail backend, can be replaced
