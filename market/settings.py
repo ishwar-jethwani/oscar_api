@@ -238,8 +238,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # email backend
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "onlinewebsitemarket@gmail.com"
-EMAIL_HOST_PASSWORD = "weckbhyqcfcepjtn"
+EMAIL_HOST_USER = "ultarapromotion1@gmail.com"
+EMAIL_HOST_PASSWORD = "ajdsqyuqgtanmeyv"
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'UltraCreation Team <noreply@onlinewebsitemarket.com>'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
